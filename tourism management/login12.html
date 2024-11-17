@@ -1,0 +1,146 @@
+<!doctype <!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]>      <html class="no-js"> <!--<![endif]-->
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title> login form </title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="">
+        <script src=prjjava.js></script>
+        <style>
+            .text{
+                color: black;
+            }
+{
+    box-sizing: border-box;
+}
+body{
+    font-family: "MULI", sans-serif;
+    background-color: aliceblue;
+   
+     color:black ;
+    align-items: center;
+    flex-direction: column;
+    display: flex;
+    height: 100vh;
+     /*margin-left: 700; */
+    overflow: hidden;
+    justify-content: center;
+    width: 350px;
+    margin: auto;
+}
+.container{
+    box-shadow: 12px 12px 12px  5px black;
+
+
+background-color:white; 
+padding: 20px 40px;
+border-radius: 5px;
+
+}
+.container h1{
+    color: black;
+    text-align: center;
+    text-shadow: 2px 2px 3px ;
+}
+.container a{
+    color: purple;
+    text-decoration: none;
+}
+.btn{
+    border-radius: 5px;
+    border: 0;
+    font-size: 16px;
+    font-family: inherit;
+    padding: 15px;
+    background: rgb(124, 93, 54);
+    width: 100%;
+    display: inline-block;
+    cursor: pointer;
+}
+.btn:focus{
+    outline: 0;
+}
+
+.btn:active{
+    transform: scale(0.98);
+}
+.text{
+    margin-top: 30px;
+}
+.form-control{
+    width: 300px;
+    margin: 20px 0 40px;
+    position: relative;
+}
+.form-control input{
+    padding: 15px 0;
+    color: black;
+    font-size: 18px;
+    width: 100%;
+    display: block;
+    border-bottom: 2px solid white;
+    border: 0;
+    background-color: transparent;
+}
+.form-control input:focus, 
+.form-control input:valid{
+    border-bottom-color: lightblue;
+    outline: 0;
+}
+.form-control label{
+    pointer-events: none;
+    left: 0;
+    top: 15px;
+    position: absolute;
+}
+.form-control label span{
+    transition: 0.3s cubic-bezier(0.68, -0.55, 0.265,1.55);
+    min-width: 5px;
+    font-size: 18px;
+    display: inline-block;
+}
+.form-control input:focus + label span,
+.form-control input:valid + label span{
+    transform: translateY(-30px);
+    color: lightblue;
+}
+.box{
+    color: white;
+}
+
+        </style>
+
+    </head>
+
+    <body>
+    <div class="container">
+        <h1>log in</h1>
+        <form action="login1.php" method="post">
+            
+            <div class="form-control"><b>username:</b>
+                <input type="text"  placeholder="username/phonenumber/email" name="email" required />
+              <!-- <label>username:</label>*/ -->
+            </div>
+            <div class="form-control"><b>password:</b>
+                <input type="password"  placeholder="password" name="password" required />
+                <!-- <label>password:</label> --><label>
+            </div><input type="checkbox"  checked="checked" name="remember" style="margin-bottom: 15px; padding-top: 5px;" >remember me</label><br>
+            
+            <button class="btn">login</button>
+            <p class="text">Don't have an account?</p>
+           <a href="signup.html">Creatre account?</a><br>
+           <a href="">forgot password?</a>
+            </div>
+        </form>
+    </div>
+      
+        
+    </body>
+    
+</html>

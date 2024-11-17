@@ -1,0 +1,190 @@
+<!DOCTYPE <!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]>      <html class="no-js"> <![endif]-->
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>signup form</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="">
+        <style>
+            body{
+                font-family: "MULI", sans-serif;
+                 background-color: aliceblue;
+               
+                color:black ;
+                 align-items: center;
+                 flex-direction: column;
+                 display: flex;
+                 width: 370px;
+                 border-radius: 5px;
+                 
+                 
+    
+                /* margin-left: 680px; */ margin: auto;
+                 border: 8px solid black;
+    
+                justify-content: center;
+                box-shadow: 12px 12px 12px 5px black;
+            }
+            h1{
+                color: black;
+                background-color: aqua;
+                text-align: center;
+            }
+            p{
+                text-align: center;
+                font-size: 20px;
+                font-size: 15px;
+            }
+           
+
+            *{
+                box-sizing: border-box;
+                color:black;
+                
+
+                
+                
+
+            }
+            input[type=text], input[type=password], input[type=date]{
+                width: 100%;
+                padding: 15px;
+                margin: 5px 0 22px 0;
+                display: inline-block;
+                border: none;
+                background: white;
+                color: black;
+                font-size: 14px;
+                
+            }
+            input[type=text]:focus,input[type=password]:focus,input[type=date]:focus{
+                background-color: white;
+                outline: none;
+                font-size: 15px;
+            }
+            hr{
+                border: 1px solid white;
+                margin-bottom: 25px;
+            }
+            button{
+                background-color: rgb(3, 188, 87);
+                color: white;
+                padding: 14px 20px;
+                margin: 8px 0;
+                border: none;
+                cursor: pointer;
+                width: 100%;
+                opacity: 0.9;
+
+
+
+            }
+            button:hover{
+                opacity: 1;
+                color: blue;
+                font-size: 12px;
+            }
+            .cancelbtn{
+                padding: 14px 20px;
+                background-color: red;
+                border-radius: 10%;
+
+
+
+            }
+            .signupbtn, .cancelbtn{
+                float: left;
+                width: 50%;
+                border-radius: 25%;
+
+            }
+            .container{
+                padding: 16px;
+            }
+            .clearfix::after{
+                content: "";
+                clear: both;
+                display: table;
+            }
+            @media screen and (max-width:300px){
+                .cancelbtn, .signupbtn{
+                    width:100%
+                }
+            }
+            span{color: white;}
+            .gender{
+            background-image: linear-gradient(to right,to right, rgb(221, 217, 217), rgb(70, 70, 70));}
+           
+        </style>
+    </head>
+    <body>
+       <form  style="border: 1px solid white";>
+        
+        <div class="container">
+            <h1>register</h1>
+            <p>please fill the form to create a account.</p><hr>
+            <label for="name"><b>name:</b></label>
+            <input type="text" placeholder="user name " name="username" required><br>
+
+            <label for="email"><b>email:</b></label>
+            <input type="text" placeholder="email@gmail.com " name="email" required><br>
+
+            <label for="phonenumber"><b>phonenumber:</b></label>
+            <input type="text" placeholder="0123456789" name="number" ><br><br>
+            </span>
+
+            <div class="gender">
+            <label for="gender" > <b>gender:</b></label>
+            <input type="radio" placeholder=" " name="gender"  value="male" required>male
+            <input type="radio" name="gender" value="female" required>female
+            <input type="radio" name="gender" value="others" required>others<br><br><br>
+            </div>
+
+            <label for="dob"><b>date of birth:</b></label>
+            <input type="date" placeholder="age " name="age" ><br>
+
+            <label for="pwd"><b>password:</b></label>
+            <input type="password" placeholder="password " name="password_1"  value="" id="myInput" required>
+           
+            <br>
+
+            <label for="cpwd"><b>confirm password</b>:</b></label>
+            <input type="password" placeholder="confirm password " name="password_2" required><br>
+
+            
+            <p><input type="checkbox"> by creating account you accept our <a href="#" style="color:purple; text-decoration:none">terms & privacy</a>.</p>
+           
+            <div class="clearfix">
+                
+                <button type="button" onclick="document.getElementById('id01').style.display='none'" class="cancelbtn" >cancel</button>
+                <a href="project.html" >
+
+               <button type="button" class="signupbtn" >  register </button></a><span>  hi</span>
+ 
+                <p> already member of our family then please <a href="pro" style="text-decoration: none; color:purple;">login</a>
+                </p> 
+            </div>
+        </div>
+
+       </form>
+        
+        <script>
+         var modal =
+         document.getElementById('id01');
+         window.onclick = function(event) {
+            if (event.target == modal) {
+                modal.style.display = "none"
+            }
+         }
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                             
+            
+        
+       </script>
+    </body>
+</html>
